@@ -1,0 +1,36 @@
+.purple{
+    background-color: rgb(119, 3, 109);
+}
+
+.red {
+    background-color:red);
+}
+
+.green{
+    background-color: rgb(31, 131, 31)
+}
+
+.yellow{
+    background-color: rgb(247, 243, 26)
+}
+
+.blue {
+    background-color: rgb(48, 102, 250)
+}
+
+.transparent{
+    background-color: transparent;
+    text-align: left;
+    font-family: 'Josefin Slab', serif;
+}
+
+/*---------------ABOUT PAGE---------------*/
+.pink{
+    background-color: pink
+}
+
+.orange{
+    background-color:orange)
+    text-align: left;
+    font-family: 'Josefin Slab', serif;
+}
