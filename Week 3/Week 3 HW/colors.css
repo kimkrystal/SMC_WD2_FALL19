@@ -1,36 +1,32 @@
 .purple{
-    background-color: rgb(119, 3, 109);
+    background-color: transparent;
 }
 
 .red {
-    background-color:red);
+    background-color: transparent;
 }
 
 .green{
-    background-color: rgb(31, 131, 31)
+    background-color: transparent;
 }
 
 .yellow{
-    background-color: rgb(247, 243, 26)
+    background-color: transparent;
 }
 
 .blue {
-    background-color: rgb(48, 102, 250)
+    background-color: transparent;
 }
 
 .transparent{
     background-color: transparent;
-    text-align: left;
-    font-family: 'Josefin Slab', serif;
 }
 
 /*---------------ABOUT PAGE---------------*/
 .pink{
-    background-color: pink
+    background-color: transparent;
 }
 
 .orange{
-    background-color:orange)
-    text-align: left;
-    font-family: 'Josefin Slab', serif;
+    background-color: transparent;
 }
