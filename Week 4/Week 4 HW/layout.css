@@ -1,0 +1,164 @@
+body {
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(102, 201, 140);
+}
+
+header input#toggler {
+    display: none;
+}
+
+header label img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+
+nav {
+    
+    padding: 20px 10px;
+    display: none;
+}
+
+input#toggler:checked + nav{
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    
+}
+
+nav li {
+    border-bottom: 1px solid #212529;
+    padding: 10px 0px;
+    margin: 10px;
+}
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #212529;
+    font-family: 'Josefin Slab', serif;
+    font-size: 24px;
+    font-style: bold;
+}
+
+ul li a.active {
+    color:white;
+  }
+  
+  ul li a:hover:not(.active) {
+    text-decoration: underline;
+    color: white;
+  }
+
+.title{
+    padding: 0px 5px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Josefin Slab', serif; 
+    font-style: bold;
+}
+
+.content{
+    padding: 30px;
+}
+
+/*---------------MAIN----------------*/
+
+img{
+    width: 100%;
+}
+
+h2{
+    margin: 100px 10px 50px 70px;
+}
+
+p{
+    text-decoration: none;
+    color: #212529;
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px;
+    font-style: bold;
+    text-align: center;
+    margin: 100px 10px 50px 70px;
+}
+
+p2{
+    text-decoration: underline;
+    color:  rgb(102, 201, 140);
+    font-family: 'Josefin Slab', serif;
+    font-size: 22px;
+    font-style: bold;
+    text-align: center;
+}
+
+.floater-section {
+    float:left;
+    width: 100%;
+}
+
+.container::after {
+    clear: both;
+    content:"";
+    display: block;
+}
+
+@media(min-width: 540px){
+    nav ul li {
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 0px;
+        margin: 10px 20px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav {
+        display: inline;
+        padding: 0px 10px;
+    }
+
+    header label img{
+        display: none;
+    }
+
+    /* MAIN */
+
+    .width-md-50 {
+        width: 50%;
+    }
+
+    .width-md-33 {
+        width: 33%;
+    }
+
+}  /*end of 540px breakpoint*/
+
+@media(min-width: 800px){
+    .width-lg-25 {
+        width:25%;
+    }
+
+    .width-lg-33{
+        width: 33.333%;
+    }
+
+    .width-lg-50 {
+        width: 50%;
+    }
+
+    .width-lg-100 {
+        width:100%;
+    }
+}
