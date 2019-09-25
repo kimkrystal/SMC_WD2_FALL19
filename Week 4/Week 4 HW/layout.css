@@ -93,8 +93,8 @@ p{
 }
 
 p2{
-    text-decoration: underline;
-    color:  rgb(102, 201, 140);
+    text-decoration: none;
+    color: rgb(102, 201, 140);
     font-family: 'Josefin Slab', serif;
     font-size: 22px;
     font-style: bold;
@@ -111,6 +111,21 @@ p2{
     content:"";
     display: block;
 }
+
+a:link {
+    text-decoration: none;
+    color:  rgb(102, 201, 140);
+    background-color: transparent;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color:  rgb(102, 201, 140);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  
 
 @media(min-width: 540px){
     nav ul li {

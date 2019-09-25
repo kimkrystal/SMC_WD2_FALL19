@@ -1,0 +1,23 @@
+.purple{
+    background-color: rgb(119, 3, 109);
+}
+
+.red {
+    background-color: rgb(211, 31, 31)
+}
+
+.green{
+    background-color: rgb(31, 131, 31)
+}
+
+.yellow{
+    background-color: rgb(247, 243, 26)
+}
+
+.blue {
+    background-color: rgb(48, 102, 250)
+}
+
+.transparent{
+    background-color: transparent;
+}
