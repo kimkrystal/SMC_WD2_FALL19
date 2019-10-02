@@ -18,6 +18,12 @@ img {
     padding: 15px;
 }
 
+.background{
+    background-image: url("currentslong.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 /*MEDIUM SIZE SCREENS */
 @media(min-width: 540px){
     .container{
