@@ -24,6 +24,10 @@ img {
     background-size: cover;
 }
 
+h3 {
+    text-align: center;
+}
+
 /*MEDIUM SIZE SCREENS */
 @media(min-width: 540px){
     .container{
