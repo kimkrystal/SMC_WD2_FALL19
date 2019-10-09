@@ -52,12 +52,12 @@ nav ul a {
 }
 
 ul li a.active {
-    color:rgb(255, 0, 76);
+    color:rgb(255, 148, 180);
   }
   
   ul li a:hover:not(.active) {
     text-decoration: underline;
-    color: rgb(0, 162, 255);
+    color: rgb(98, 198, 255);
   }
 
 .title{
@@ -105,7 +105,7 @@ p{
 
 a:link {
     text-decoration: none;
-    color:  rgb(102, 201, 140);
+    color:  black;
     background-color: transparent;
   }
   
