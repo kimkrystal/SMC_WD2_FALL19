@@ -2,8 +2,8 @@ body {
     margin: 0px;
 }
 
-header{
-    background-color:transparent;
+header {
+    background-color: transparent;
 }
 
 header input#toggler {
@@ -17,12 +17,12 @@ header label img {
 }
 
 nav {
-    
+
     padding: 20px 10px;
     display: none;
 }
 
-input#toggler:checked + nav{
+input#toggler:checked+nav {
     display: block;
 }
 
@@ -30,7 +30,7 @@ nav ul {
     list-style: none;
     padding-left: 0px;
     margin: 0px;
-    
+
 }
 
 nav li {
@@ -52,73 +52,141 @@ nav ul a {
 }
 
 ul li a.active {
-    color:rgb(255, 148, 180);
-  }
-  
-  ul li a:hover:not(.active) {
-    text-decoration: underline;
-    color: rgb(98, 198, 255);
-  }
+    color: rgb(252, 178, 200);
+}
 
-.title{
+ul li a:hover:not(.active) {
+    text-decoration: none;
+    color: rgb(98, 198, 255);
+}
+
+.title {
     padding: 0px 5px;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: bold;
 }
 
-.content{
+.content {
     padding: 30px;
 }
 
 /*---------------MAIN----------------*/
 
-img{
+img {
     width: 100%;
 }
 
-h2{
-    margin: 100px 10px 50px 70px;
+h2 {
+    margin: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-p{
+p {
     text-decoration: none;
     color: #212529;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-style: bold;
     text-align: center;
-    margin: 100px 10px 50px 70px;
+    margin: 50px 10px 50px 70px;
 }
 
 .floater-section {
-    float:left;
+    float: left;
     width: 100%;
 }
 
 .container::after {
     clear: both;
-    content:"";
+    content: "";
     display: block;
 }
 
 a:link {
     text-decoration: none;
-    color:  black;
+    color: black;
     background-color: transparent;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color:  rgb(102, 201, 140);
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  
+}
 
-@media(min-width: 540px){
+a:hover {
+    text-decoration: none;
+    color: rgb(252, 178, 200);
+    background-color: transparent;
+}
+
+/*---------------MENU----------------*/
+
+
+
+/*---------------CONTACT PAGE----------------*/
+
+.email {
+    text-decoration: none;
+    color: rgb(252, 178, 200);
+}
+
+.form {
+    margin: 0px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+label, input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    color: #2d2d2d;
+    line-height: 38px;
+    display: block;
+    width: 100%;
+    margin: 15px 0px;
+    text-decoration: none;
+
+}
+
+form {
+    position: relative;
+}
+
+fieldset {
+    margin: 5px 14px;
+    padding: 35px;
+    border: none;
+}
+
+input[type=submit],
+input[type=button] {
+    background-color: rgb(252, 178, 200);
+    border: none;
+    color: black;
+    width: initial;
+    position: absolute;
+    left: 34px;
+    margin: 10px 16px;
+    padding: 4px 10px;
+}
+
+section {
+    padding-top: 100px;
+    margin-left: 20%;
+}
+
+.hairline {
+    margin: 0px auto;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(252, 178, 200);
+}
+
+@media(min-width: 540px) {
     nav ul li {
         display: inline-block;
         padding-bottom: 5px;
@@ -135,7 +203,7 @@ a:link {
         padding: 0px 10px;
     }
 
-    header label img{
+    header label img {
         display: none;
     }
 
@@ -149,14 +217,16 @@ a:link {
         width: 33%;
     }
 
-}  /*end of 540px breakpoint*/
+}
 
-@media(min-width: 800px){
+/*end of 540px breakpoint*/
+
+@media(min-width: 800px) {
     .width-lg-25 {
-        width:25%;
+        width: 25%;
     }
 
-    .width-lg-33{
+    .width-lg-33 {
         width: 33.333%;
     }
 
@@ -165,6 +235,6 @@ a:link {
     }
 
     .width-lg-100 {
-        width:100%;
+        width: 100%;
     }
 }
