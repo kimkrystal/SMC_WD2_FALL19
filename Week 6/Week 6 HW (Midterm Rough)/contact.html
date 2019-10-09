@@ -22,28 +22,39 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a class="active" href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="floater-section width-md-33 width-lg-50 pink">
-            <img src="menu.jpg" alt="Drink Menu">
-        </div>
-
-        <div class="floater-section width-md-33 width-lg-50 orange">
-            <h2>About Us </h2>
-            <p>Our mission is to make the experience of discovering the perfect potted plants as wonderful as the plants
-                themselves. The Sill is the source that bridges the gap between plants and people, offering products and
-                services that fit with your personal style, your lifestyle, and your budget.</p>
-            <p>Email us at <a href="mailto:hellofronds@plantbased.com?Subject=Hello%20again"
-                    target="_top">hellofronds@plantbased.com</a>
-            </p>
-        </div>
+            <div class="content">
+                    <div class="form">
+                        <h2>LET'S CHITCHAT!</h2>
+                        <p>Or email me directly <a class="email" href="mailto:ash@CHITCHATLA.COM">ASH@CHITCHATLA.COM</a></p>
+                    </div>
+            
+                    <div class="hairline"></div>
+            
+                            <form action="login.php" method="POST">
+                                    <fieldset>
+                                        <label for="UserName">YOUR NAME:</label>
+                                        <input id="UserName" type="text" name="username" autocomplete="off">
+                                        
+                                        <label for="EmailAddress">EMAIL ADDRESS:</label>
+                                        <input id="EmailAddress" type="email" name="emailaddress">
+                            
+                            
+                                        <label id="Message">CHAT WITH US:</label>
+                                        <textarea id="Message" name="message"></textarea>
+                                    </fieldset>
+                            
+                                    <input type="submit" name="form submit" value="Submit">
+                            </form>
+                </div>
 
 
     </main>
