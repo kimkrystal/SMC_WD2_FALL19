@@ -92,15 +92,6 @@ p{
     margin: 100px 10px 50px 70px;
 }
 
-p2{
-    text-decoration: none;
-    color: rgb(102, 201, 140);
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    font-style: bold;
-    text-align: center;
-}
-
 .floater-section {
     float:left;
     width: 100%;
@@ -136,7 +127,7 @@ a:link {
     }
 
     nav ul {
-        text-align: right;
+        text-align: center;
     }
 
     nav {
