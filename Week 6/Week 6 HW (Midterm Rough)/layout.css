@@ -71,7 +71,11 @@ ul li a:hover:not(.active) {
 .content {
     padding: 30px;
 }
-
+.img-center{
+    display:block;
+    margin: auto;
+    width: 200px;
+}
 /*---------------MAIN----------------*/
 
 img {
@@ -116,7 +120,7 @@ a:hover {
     background-color: transparent;
 }
 
-/*---------------MENU----------------*/
+/*---------------MENU PAGE----------------*/
 
 
 
@@ -216,6 +220,9 @@ section {
         width: 33%;
     }
 
+    .width-md-25{
+        width: 25%;
+    }
 }
 
 /*end of 540px breakpoint*/
