@@ -17,7 +17,7 @@ header label img {
 }
 
 nav {
-    padding: 20px 10px;
+    padding: 0px 0px;
     display: none;
     align-items: center;
     justify-content: center;
@@ -29,14 +29,13 @@ input#toggler:checked+nav {
 
 nav ul {
     list-style: none;
-    padding-left: 0px;
     margin: 0px;
 }
 
 nav li {
-    border-bottom: 5px solid #212529;
-    padding: 10px 0px;
-    margin: 10px;
+    border-bottom: 2px solid #212529;
+    padding: 0px 0px;
+    margin: 0px;
 
 }
 
@@ -48,7 +47,7 @@ nav ul a {
     display: block;
     margin: 1px auto;
     text-align: center;
-    padding: 30px 0px;
+    padding: 0px 0px;
     text-decoration: none;
     color: #212529;
     font-family: 'Poppins', sans-serif;
