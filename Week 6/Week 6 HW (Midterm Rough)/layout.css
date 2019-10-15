@@ -17,10 +17,10 @@ header label img {
 }
 
 nav {
-    padding: 0px 0px;
+    position: relative;
+    top: -50px;
+    padding: 20px 10px;
     display: none;
-    align-items: center;
-    justify-content: center;
 }
 
 input#toggler:checked+nav {
@@ -28,30 +28,31 @@ input#toggler:checked+nav {
 }
 
 nav ul {
+    box-sizing: border-box;
     list-style: none;
-    margin: 0px;
+    padding-left: 0px;
+    margin: 5px;
 }
 
 nav li {
-    border-bottom: 2px solid #212529;
+    border-bottom: 1px solid #212529;
     padding: 0px 0px;
     margin: 0px;
-
 }
 
 nav li:first-child {
     margin-top: 0px;
 }
 
+nav ul li:nth-child(3) {
+    display: none;
+}
+
 nav ul a {
-    display: block;
-    margin: 1px auto;
-    text-align: center;
-    padding: 0px 0px;
     text-decoration: none;
     color: #212529;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-style: bold;
 }
 
@@ -76,21 +77,23 @@ ul li a:hover:not(.active) {
     padding: 30px;
 }
 
-#logo{
-    width:  160px;
-    height: 160px;
+#logo {
+    position: relative;
+    bottom: -50px;
+    width: 140px;
+    height: 120px;
+    margin: 0px 2vw;
     background-size: cover;
     background-position: center;
     background-image: url(logocircle.jpg);
     display: inline-block;
 }
-/*---------------MAIN----------------*/
 
 img {
     width: 100%;
 }
 
-h2 {
+h1,h2 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -128,11 +131,86 @@ a:hover {
     background-color: transparent;
 }
 
+a:visited {
+    color:black;
+  }
+
+/*---------------HOME PAGE----------------*/
+
+.img-home{
+    padding-bottom: 60px;
+}
+
+#instagram {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: right;
+    background-image: url(instagramiconwhite.png);
+    display: inline-block;
+}
+
+#facebook {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: right;
+    background-image: url(facebookiconwhite.png);
+    display: inline-block;
+}
+
+.footer {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(252, 178, 200);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: bold;
+    color: white;
+    text-align: center;
+}
 /*---------------MENU PAGE----------------*/
 
+.menu {
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+}
 
+th {
+    text-align: center;
+}
+
+tr {
+    position: relative;
+}
+
+/*---------------TABLE ----------------*/
+.table{
+    margin: 0px auto;
+    width: 80%;
+    background-color: black;
+}
+
+.itemsName{
+    float: left;
+    width: 55%;
+    background-color: aliceblue;
+}
+
+.price{
+    float: left;
+    width: 25%;
+    background-color: beige; 
+}
 
 /*---------------CONTACT PAGE----------------*/
+
+.img-letschat{
+    width:400px;
+    height:400px;
+    margin: 10vw;
+}
 
 .email {
     text-decoration: none;
@@ -148,7 +226,8 @@ textarea {
     height: 100px;
 }
 
-label, input {
+label,
+input {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -214,9 +293,28 @@ section {
         padding: 0px 10px;
     }
 
+    nav ul li:nth-child(3) {
+        display: inline-block;
+    }
+
+    nav ul li:nth-child(4) {
+        display: none;
+    }
+
     header label img {
         display: none;
     }
+
+    #logo {
+        width: 100px;
+        height: 80px;
+        margin: 0px 1vw;
+    }
+
+    nav ul a {
+        font-size: 13px;
+    }
+
 
     /* MAIN */
 
@@ -228,7 +326,7 @@ section {
         width: 33%;
     }
 
-    .width-md-20{
+    .width-md-20 {
         width: 20%;
     }
 }
@@ -236,6 +334,18 @@ section {
 /*end of 540px breakpoint*/
 
 @media(min-width: 800px) {
+
+    nav ul a {
+        font-size: 16px;
+    }
+
+    #logo { 
+        width: 140px;
+        height: 120px;
+        margin: 0px 2vw;
+    }
+
+
     .width-lg-20 {
         width: 20%;
     }
@@ -243,6 +353,7 @@ section {
     .width-lg-25 {
         width: 25%;
     }
+
     .width-lg-33 {
         width: 33.333%;
     }
