@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>Week 6 HW Midterm</title>
+
+</head>
+
+<body>
+    <header>
+        <label for="toggler">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png">
+        </label>
+        <input type="checkbox" id="toggler">
+
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="index.html">
+                        <div id="logo"></div>
+                    </a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a class="active" href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>CHAT WITH US</h1>
+        </div>
+        <div class="container">
+            <div class="floater-section width-md-33 width-lg-50 pink">
+                <img class="img-letschat" src="CONTACT/contact_letschitchat.jpg" alt="Let's ChitChat">
+            </div>
+
+            <div class="floater-section width-md-33 width-lg-50 pink">
+                <div class="form">
+                    <h2>Have a Q? An idea? Just want to talk?</h2>
+                    <p><a class="email" href="mailto:ash@CHITCHATLA.COM">ASH@CHITCHATLA.COM</a></p>
+                </div>
+
+                <div class="hairline"></div>
+
+                <form action="login.php" method="POST">
+                    <fieldset>
+                        <label for="UserName">YOUR NAME:</label>
+                        <input id="UserName" type="text" name="username" autocomplete="off">
+
+                        <label for="EmailAddress">EMAIL ADDRESS:</label>
+                        <input id="EmailAddress" type="email" name="emailaddress">
+
+
+                        <label id="Message">CHAT WITH US:</label>
+                        <textarea id="Message" name="message"></textarea>
+                    </fieldset>
+                    <input type="submit" name="form submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <!------- FOOTER ------>
+
+        <div class="footer">
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/chitchatla/">
+                    <div id="instagram"></div>
+                </a>
+                <a href="https://www.facebook.com/chitchatcoffeematcha/">
+                    <div id="facebook"></div>
+                </a>
+            </div>
+            <p class="p-footerAddress">© CHITCHAT LLC 2017 | ALL RIGHTS RESERVED</p>
+
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
