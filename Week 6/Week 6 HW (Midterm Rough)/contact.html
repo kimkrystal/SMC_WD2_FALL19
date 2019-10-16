@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <title>Week 6 HW Midterm Rough</title>
+    <title>Week 6 HW Midterm</title>
 
 </head>
 
@@ -35,42 +35,54 @@
     </header>
 
     <main>
-            <div class="floater w-50">
-                    <div class="title">
-                        <h1>CHAT WITH US</h1>
-                    </div>
-                </div>
-        <div class="floater-section width-md-33 width-lg-50 pink">
-            <img class="img-letschat" src="CONTACT/contact_letschitchat.jpg" alt="Let's ChitChat">
+        <div class="title">
+            <h1>CHAT WITH US</h1>
         </div>
-
-        <div class="floater-section width-md-33 width-lg-50 pink">
-            <div class="form">
-                <h2>Have a Q? An idea? Just want to talk?</h2>
-                <p><a class="email" href="mailto:ash@CHITCHATLA.COM">ASH@CHITCHATLA.COM</a></p>
+        <div class="container">
+            <div class="floater-section width-md-33 width-lg-50 pink">
+                <img class="img-letschat" src="CONTACT/contact_letschitchat.jpg" alt="Let's ChitChat">
             </div>
 
-            <div class="hairline"></div>
+            <div class="floater-section width-md-33 width-lg-50 pink">
+                <div class="form">
+                    <h2>Have a Q? An idea? Just want to talk?</h2>
+                    <p><a class="email" href="mailto:ash@CHITCHATLA.COM">ASH@CHITCHATLA.COM</a></p>
+                </div>
 
-            <form action="login.php" method="POST">
-                <fieldset>
-                    <label for="UserName">YOUR NAME:</label>
-                    <input id="UserName" type="text" name="username" autocomplete="off">
+                <div class="hairline"></div>
 
-                    <label for="EmailAddress">EMAIL ADDRESS:</label>
-                    <input id="EmailAddress" type="email" name="emailaddress">
+                <form action="login.php" method="POST">
+                    <fieldset>
+                        <label for="UserName">YOUR NAME:</label>
+                        <input id="UserName" type="text" name="username" autocomplete="off">
+
+                        <label for="EmailAddress">EMAIL ADDRESS:</label>
+                        <input id="EmailAddress" type="email" name="emailaddress">
 
 
-                    <label id="Message">CHAT WITH US:</label>
-                    <textarea id="Message" name="message"></textarea>
-                </fieldset>
-                <input type="submit" name="form submit" value="Submit">
-            </form>
+                        <label id="Message">CHAT WITH US:</label>
+                        <textarea id="Message" name="message"></textarea>
+                    </fieldset>
+                    <input type="submit" name="form submit" value="Submit">
+                </form>
+            </div>
         </div>
+        <!------- FOOTER ------>
+
+        <div class="footer">
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/chitchatla/">
+                    <div id="instagram"></div>
+                </a>
+                <a href="https://www.facebook.com/chitchatcoffeematcha/">
+                    <div id="facebook"></div>
+                </a>
+            </div>
+            <p class="p-footerAddress">© CHITCHAT LLC 2017 | ALL RIGHTS RESERVED</p>
 
 
+        </div>
     </main>
-
 
 
 </body>

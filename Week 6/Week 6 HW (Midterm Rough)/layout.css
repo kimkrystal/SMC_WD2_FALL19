@@ -38,6 +38,7 @@ nav li {
     border-bottom: 1px solid #212529;
     padding: 0px 0px;
     margin: 0px;
+    text-align: center;
 }
 
 nav li:first-child {
@@ -52,7 +53,7 @@ nav ul a {
     text-decoration: none;
     color: #212529;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     font-style: bold;
 }
 
@@ -93,9 +94,26 @@ img {
     width: 100%;
 }
 
-h1,h2 {
+h1,
+h2,
+h3 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+}
+
+.aboutUs {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.p-footerAddress {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: bold;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding-top: 15px;
 }
 
 p {
@@ -105,7 +123,6 @@ p {
     font-size: 18px;
     font-style: bold;
     text-align: center;
-    margin: 50px 10px 50px 70px;
 }
 
 .floater-section {
@@ -113,6 +130,9 @@ p {
     width: 100%;
 }
 
+.container{
+    width:100%;
+}
 .container::after {
     clear: both;
     content: "";
@@ -125,25 +145,36 @@ a:link {
     background-color: transparent;
 }
 
+a:visited {
+    color: black;
+}
+
 a:hover {
     text-decoration: none;
     color: rgb(252, 178, 200);
     background-color: transparent;
 }
 
-a:visited {
-    color:black;
-  }
+.buttonStyle {
+    left: 100px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 300px;
+}
 
 /*---------------HOME PAGE----------------*/
 
-.img-home{
+.img-home {
     padding-bottom: 60px;
 }
 
 #instagram {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-size: cover;
     background-position: right;
     background-image: url(instagramiconwhite.png);
@@ -151,8 +182,8 @@ a:visited {
 }
 
 #facebook {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-size: cover;
     background-position: right;
     background-image: url(facebookiconwhite.png);
@@ -161,54 +192,88 @@ a:visited {
 
 .footer {
     position: relative;
-    height: 200px;
+    height: 100px;
     width: 100%;
     background-color: rgb(252, 178, 200);
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-style: bold;
     color: white;
     text-align: center;
 }
+
+.socialmedia {
+    padding-top: 20px;
+}
+
+/*---------------ABOUT PAGE----------------*/
+
+.img-aboutUs {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.aboutUs {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 20px;
+
+}
+
 /*---------------MENU PAGE----------------*/
 
 .menu {
     font-family: 'Poppins', sans-serif;
     font-style: bold;
+    width: 50%;
+    margin: 0px auto;
+    padding-bottom: 50px;
+
+}
+
+.table {
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    margin: 0px auto;
+    width: 100%;
+    background-color: black;
 }
 
 th {
     text-align: center;
 }
 
+td {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
 tr {
     position: relative;
 }
 
-/*---------------TABLE ----------------*/
-.table{
-    margin: 0px auto;
-    width: 80%;
-    background-color: black;
+.td-tablesection {
+    font-size: 30px;
+    font-style: bold;
+    color: rgb(252, 178, 200);
+    padding: 30px 0px 5px;
 }
 
-.itemsName{
-    float: left;
-    width: 55%;
-    background-color: aliceblue;
+.td-menuitem {
+    font-size: 20px;
+    font-style: bold;
+    padding-bottom: 0px;
 }
 
-.price{
-    float: left;
-    width: 25%;
-    background-color: beige; 
+td {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 18px;
 }
 
 /*---------------CONTACT PAGE----------------*/
 
-.img-letschat{
-    width:400px;
-    height:400px;
+.img-letschat {
+    width: 400px;
+    height: 400px;
     margin: 10vw;
 }
 
@@ -315,6 +380,12 @@ section {
         font-size: 13px;
     }
 
+    .googleMap {
+        width: 100vw;
+        float: left;
+    }
+
+
 
     /* MAIN */
 
@@ -336,13 +407,19 @@ section {
 @media(min-width: 800px) {
 
     nav ul a {
-        font-size: 16px;
+        font-size: 18px;
+        padding: 25px;
     }
 
-    #logo { 
+    #logo {
         width: 140px;
         height: 120px;
         margin: 0px 2vw;
+    }
+
+    .googleMap {
+        width: 100vw;
+        float: left;
     }
 
 
