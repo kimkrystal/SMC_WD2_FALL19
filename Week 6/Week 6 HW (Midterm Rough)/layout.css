@@ -130,6 +130,19 @@ p {
     width: 100%;
 }
 
+.fslong{
+    height:650px;
+    position: relative;
+    margin: auto;
+}
+
+.info{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .container{
     width:100%;
 }
@@ -283,7 +296,7 @@ td {
 }
 
 .form {
-    margin: 0px;
+    margin: 10px;
 }
 
 textarea {
@@ -337,7 +350,7 @@ section {
 .hairline {
     margin: 0px auto;
     height: 1px;
-    width: 100%;
+    width: 86%;
     background-color: rgb(252, 178, 200);
 }
 
