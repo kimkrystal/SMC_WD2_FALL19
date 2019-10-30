@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 9</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navBar">
+            <button id="sizeButton">Too small?</button>
+            <button id="colorButton">Too dark?</button>
+            <button id="borderButton">Too simple?</button>
+    </header>
+
+    <main>
+        <div id="contentMain">
+            <h1>Have a wonderful week!</h1>
+        </div>
+    </main>
+
+
+    <footer>
+    </footer>
+
+    <script>
+        document.getElementById("sizeButton").addEventListener("click", function () {
+            console.log("it!");
+            var mainContent = document.getElementById("contentMain");
+            mainContent.style.fontSize = "40px";
+        }); 
+            document.getElementById("colorButton").addEventListener("click", function () {
+            console.log("it!");
+            var mainContent = document.getElementById("contentMain");
+            mainContent.style.color = "rgb(200,100,5)";
+        });
+
+        document.getElementById("borderButton").addEventListener("click", function () {
+            console.log("it!");
+            var mainContent = document.getElementById("contentMain");
+            mainContent.style.textDecoration = "underline wavy blue";
+            
+        });
+
+        alert("Hello! How are you today?");
+    </script>
+
+</body>
+
+</html>
