@@ -39,10 +39,12 @@
                     <option value="Mango">Mango Matcha</option>
                 </select>
 
-                <select id="size">
-                </select>
+                <!-- <select id="size">
+                </select> -->
 
             </form>
+
+            <p id="size"></p>
         </section>
     </main>
     <script>
@@ -55,9 +57,12 @@
 
         document.getElementById('imgToggler').addEventListener('click', function () {
 
-            console.log(image1URL);
+            // var currentSource = document.getElementById('imageToSwitch').src;
 
-            if (switchingImage.src === image2URL) {
+            // var lastSlash = currentSource.lastIndexOf('/');
+            // currentSource.slice(lastSlash+1);
+
+            if (switchingImage.alt === image2Alt) {
                 switchingImage.src = image1URL;
                 switchingImage.alt = image1Alt;
             } else {
@@ -73,9 +78,11 @@
             console.log(drinkSelect.value);
 
             if (drinkSelect.value === 'Latte') {
-                sizeSelect.innerHTML = '<option value= "SM">SM</option>\
-                                    <option value= "MD">MD</option>\
-                                    <option value= "LG">LG</option>';
+                // sizeSelect.innerHTML = '<option value= "SM">SM</option>\
+                //                     <option value= "MD">MD</option>\
+                //                     <option value= "LG">LG</option>';
+
+                sizeSelect.innerHTML = 'A latte is a <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank" class="red-link">coffee</a> drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffè e latte, caffelatte or caffellatte, which means "milk coffee".';
             }
             if (drinkSelect.value === 'Hulk') {
                 sizeSelect.innerHTML = '<option value= "SM">SM</option>\
