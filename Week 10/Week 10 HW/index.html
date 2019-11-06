@@ -13,10 +13,11 @@
 
 <body>
     <header>
-        <label for="toggler">
-            <img src="coffeecup.png">
+        <label for="imgToggler">
+            <img src="coffeecup.png" id="imageToSwitch" alt="Coffee Cup with Heart">
+            <!-- <button id="imgToggle">Switch!</button> -->
         </label>
-        <input type="checkbox" id="toggler">
+        <input type="checkbox" id="imgToggler">
 
         <nav>
             <ul>
@@ -29,35 +30,30 @@
     </header>
 
     <main>
-        <section>
-            <img src="https://safespaceradio.com/wp-content/uploads/Apologies-400x400.jpg" id="imageToSwitch"
-                alt="Hand holding flowers in front of a sunset field.">
-            <button id="imgToggle">Switch!</button>
-        </section>
 
         <section>
             <form action="" method="GET">
-                <select id="make">
-                    <option value="audi">Audi</option>
-                    <option value="BMW">BMW</option>
-                    <option value="Fiat">Fiat</option>
+                <select id="drink">
+                    <option value="Latte">Matcha Latte</option>
+                    <option value="Hulk">The Incredible Hulk</option>
+                    <option value="Mango">Mango Matcha</option>
                 </select>
 
-                <select id="model">
-
+                <select id="size">
                 </select>
+
             </form>
         </section>
     </main>
     <script>
-        var image2URL = "https://www.filterforge.com/more/help/images/size400.jpg";
-        var image2Alt = "Electric chaos.";
+        var image2URL = "coffeecupfill.png";
+        var image2Alt = "Coffee cup with heat steam and filled in heart";
         var switchingImage = document.getElementById("imageToSwitch");
 
         var image1URL = switchingImage.src;
         var image1Alt = switchingImage.alt;
 
-        document.getElementById('imgToggle').addEventListener('click', function () {
+        document.getElementById('imgToggler').addEventListener('click', function () {
 
             console.log(image1URL);
 
@@ -67,30 +63,29 @@
             } else {
                 switchingImage.src = image2URL;
                 switchingImage.alt = image2Alt;
-
             }
         })
 
-        var makeSelect = document.getElementById('make');
-        var modelSelect = document.getElementById('model');
+        var drinkSelect = document.getElementById('drink');
+        var sizeSelect = document.getElementById('size');
 
-        makeSelect.addEventListener('change', function () {
-            console.log(makeSelect.value);
+        drinkSelect.addEventListener('change', function () {
+            console.log(drinkSelect.value);
 
-            if (makeSelect.value === 'BMW') {
-                modelSelect.innerHTML = '<option value= "M3">M3</option>\
-                                    <option value= "M5">M5</option>\
-                                    <option value= "X5">X5</option>';
+            if (drinkSelect.value === 'Latte') {
+                sizeSelect.innerHTML = '<option value= "SM">SM</option>\
+                                    <option value= "MD">MD</option>\
+                                    <option value= "LG">LG</option>';
             }
-            if (makeSelect.value === 'audi') {
-                modelSelect.innerHTML = '<option value= "A4">A4</option>\
-                                    <option value= "A8">A8</option>\
-                                    <option value= "R8">R8</option>';
+            if (drinkSelect.value === 'Hulk') {
+                sizeSelect.innerHTML = '<option value= "SM">SM</option>\
+                                    <option value= "MD">MD</option>\
+                                    <option value= "LG">LG</option>';
             }
-            if (makeSelect.value === 'Fiat') {
-                modelSelect.innerHTML = '<option value= "500">500</option>\
-                                    <option value= "124">Spider</option>\
-                                    <option value= "R8">R8</option>';
+            if (drinkSelect.value === 'Mango') {
+                sizeSelect.innerHTML = '<option value= "SM">SM</option>\
+                                    <option value= "MD">MD</option>\
+                                    <option value= "LG">LG</option>';
             }
         })
     </script>

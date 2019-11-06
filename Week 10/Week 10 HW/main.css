@@ -6,7 +6,7 @@ header{
     background-color: rgb(102, 201, 140);
 }
 
-header input#toggler {
+header input#imgToggler {
     display: none;
 }
 
@@ -22,7 +22,7 @@ nav {
     display: none;
 }
 
-input#toggler:checked + nav{
+input#imgToggler:checked + nav{
     display: block;
 }
 
