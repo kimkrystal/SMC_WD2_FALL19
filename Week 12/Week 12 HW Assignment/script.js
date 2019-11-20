@@ -7,7 +7,43 @@ $(document).ready(function(){
        
     $('input, label').blur(function(){
         $('p.notification').remove()
-    })
+    });
+
+    $('.button-Apple').click(function(){
+        $('.Apple').remove()
+    });
+
+    $('.button-SugarCrisp').click(function(){
+        $('.SugarCrisp').remove()
+    });
+
+    $('.button-CocoaPuffs').click(function(){
+        $('.CocoaPuffs').remove()
+    });
+
+
+    $('.button-FruitBrute').click(function(){
+        $('.FruitBrute').remove()
+    });
+
+    $('.button-LuckyCharms').click(function(){
+        $('.LuckyCharms').remove()
+    });
+
+    $('.button-GrapeFellow').click(function(){
+        $('.GrapeFellow').remove()
+    });
+
+    $('.button-Post').click(function(){
+        $('.Post').remove()
+    });
+    $('.button-Jets').click(function(){
+        $('.Jets').remove()
+    });
+    $('.button-Kix').click(function(){
+        $('.Kix').remove()
+    });
+
 
     $('select#FX').change(function(){
         var currentSelection = $(this).val();
