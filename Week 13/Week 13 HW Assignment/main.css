@@ -12,8 +12,9 @@
 .navbar-item{
     margin: 10px;
 }
+
 .navbar img{
-    width:50%;
+    width:100%;
     height:auto;
     display:inline-block;
 }

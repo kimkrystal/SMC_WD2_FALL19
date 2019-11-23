@@ -1,5 +1,5 @@
 $(document).ready(function(){
     $('logo').click(function(){
-         $('.navbar').toggleClass("hidden");
+         $('.navbar-item').toggleClass("hidden");
         })
     });
