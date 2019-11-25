@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
-    height: 200px;
+    height: 400px;
     align-content: space-evenly;  
 }
 
@@ -14,8 +14,8 @@
 }
 
 .navbar img{
-    width:100%;
-    height:auto;
+    width:auto;
+    height:50px;
     display:inline-block;
 }
 
@@ -32,9 +32,7 @@
 .navbar-item:nth-child(Chocolate Mousse){
     background-color: powderblue;
 }
-.navbar-item:nth-child(5){
-    background-color: mintcream;
-}
+
 
 .hidden{
     display:none;
