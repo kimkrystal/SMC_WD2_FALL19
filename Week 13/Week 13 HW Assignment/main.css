@@ -1,100 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Text+Me+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    margin: 0px;
+}
+
 .navbar {
-    background-color:darkorange;
+    background-color: darkorange;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    height: 400px;
-    align-content: space-evenly;  
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
-.navbar-item{
+.navbar-item {
     margin: 10px;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
 }
 
-.navbar img{
-    width:auto;
-    height:50px;
-    display:inline-block;
+.navbar img {
+    width: auto;
+    height: 50px;
+    display: inline-block;
 }
 
-
-.navbar-item:nth-child(Earl Grey){
-    background-color: aquamarine
-}
-.navbar-item:nth-child(Pumpkin Spice){
-    background-color: cadetblue;
-}
-.navbar-item:nth-child(Caramel Pecan){
-    background-color: deepskyblue;
-}
-.navbar-item:nth-child(Chocolate Mousse){
-    background-color: powderblue;
+/* NAVBAR ITEMS */
+.navbar-item:nth-child(1) {
+    order: 1;
 }
 
-
-.hidden{
-    display:none;
+.navbar-item:nth-child(2) {
+    order: 2;
 }
 
+.navbar-item:nth-child(3) {
+    order: 3;
+}
+
+.navbar-item:nth-child(4) {
+    order: 4;
+}
+
+.navbar-item:nth-child(5) {
+    order: 5;
+}
+
+.navbar-item:nth-child(6) {
+    order: 6;
+}
+
+.navbar-item:nth-child(7) {
+    order: 7;
+}
+
+.current {
+    text-decoration: underline double;
+}
+
+.hidden {
+    display: none;
+}
+
+/*------MAIN------*/
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+
+h1 {
+    font-family: 'Text Me One', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin: 15px;
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+}
+
+.flex-content h2 {
+    margin: 5px;
+    text-align: center;
+    font-family: 'Text Me One', sans-serif;
+}
+
+.flex-content img {
+    width: 100%;
+    height: auto;
+}
+
+.flex-content p {
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+.flex-content div {
+    margin: 10px 0px;
+}
+
+/*------MEDIUM SIZE SCREENS------*/
 @media(min-width: 540px) {
 
-
-    header label img {
-        display: none;
+    /* NAVBAR ITEMS */
+    .navbar-item:nth-child(1) {
+        order: 4;
     }
 
-    #logo {
-        width: 100%;
-        height: auto;
-        margin: 0px 1vw;
+    .navbar-item:nth-child(2) {
+        order: 1;
+    }
+
+    .navbar-item:nth-child(3) {
+        order: 2;
+    }
+
+    .navbar-item:nth-child(4) {
+        order: 3;
+    }
+
+    .navbar-item:nth-child(5) {
+        order: 5;
+    }
+
+    .navbar-item:nth-child(6) {
+        order: 6;
+    }
+
+    .navbar-item:nth-child(7) {
+        order: 7;
+    }
+
+    .navbar {
+        flex-direction: row;
+        padding-bottom: 0px;
+    }
+
+    .navbar img {
+        height: 70px;
+        width: auto;
+    }
+
+    h1{
+        font-size: 70px;
     }
 
 
+/* MAIN */
 
-    /* MAIN */
-
-    .width-md-50 {
-        width: 50%;
-    }
-
-    .width-md-33 {
-        width: 33%;
-    }
-
-    .width-md-20 {
-        width: 20%;
-    }
+.flex-content{
+    flex-direction: row;
+    margin: 0px 10px;
 }
 
-/*end of 540px breakpoint*/
+.flex-content div{
+    margin: 20px;
+}
 
-@media(min-width: 800px) {
+.earl{
+    order: 1;
+    flex-grow: 1;
+    width: 25%;
+}
 
-    #logo {
-        width: 140px;
-        height: 120px;
-        margin: 0px 2vw;
-    }
+.pumpkin{
+    order: 2;
+    flex-grow: 1;
+    width: 25%;
+}
 
-    .width-lg-20 {
-        width: 20%;
-    }
+.pecan{
+    order: 3;
+    flex-grow: 1;
+    width: 25%;
+}
 
-    .width-lg-25 {
-        width: 25%;
-    }
+.mousse{
+    order: 4;
+    flex-grow: 1;
+    width: 25%;
+}
 
-    .width-lg-33 {
-        width: 33.333%;
-    }
-
-    .width-lg-50 {
-        width: 50%;
-    }
-
-    .width-lg-100 {
-        width: 100%;
-    }
+.honey{
+    width: 25%;
+    order: 5;
+    flex-grow: 2;
 }
