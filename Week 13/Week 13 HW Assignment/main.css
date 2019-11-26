@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cherry+Swash&display=swap');
 body {
@@ -68,11 +67,13 @@ a{
 
 a.active {
     color:white; 
-    text-decoration: underline double;
+
 }
 
 a:hover:not(.active) {
     color:white;
+    letter-spacing: 2px;
+    transition: all 280ms ease-in-out;
 }
 
 
@@ -109,12 +110,6 @@ h1 {
 .flex-content img {
     width: 100%;
     height: auto;
-}
-
-.flex-content p {
-    margin: 10px;
-    font-family: 'Solway', serif;
-    font-size: 15px;
 }
 
 .flex-content div {
@@ -218,7 +213,13 @@ h1 {
 }
 
 .page p{
-    font-size: 17px;
+    margin: 10px;
+    font-family: 'Solway', serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
 }
 
 .page-list{
@@ -226,8 +227,4 @@ h1 {
     flex-grow: 1;
 }
 
-.history{
-    font-size: 55px;
-}
 
-}
