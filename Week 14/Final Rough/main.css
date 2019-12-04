@@ -185,7 +185,7 @@ h1 {
     padding-top: 20px;
 }
 
-/*------MEDIUM SIZE SCREENS------*/
+/*---------------MEDIUM SIZE SCREENS------------*/
 @media(min-width: 540px) {
 
     /* NAVBAR ITEMS */
@@ -238,7 +238,7 @@ h1 {
         height: 80px;
         margin: 0px 1vw;
     }
-    
+
     h1{
         font-size: 70px;
     }
