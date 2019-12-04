@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;    
+    margin: 0px;
+  }
+
+header {
+    background-color: transparent;
+}
+
+header input#toggler {
+    display: none;
+}
+header label img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+
+input#toggler:checked+nav {
+    display: block;
+}
+#logo {
+    position: relative;
+    bottom: -50px;
+    width: 140px;
+    height: 120px;
+    margin: 0px 2vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url();
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-item {
+    margin: 10px;
+    font-family: 'Solway', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar img {
+    width: auto;
+    height: 50px;
+    display: inline-block;
+}
+
+/* NAVBAR ITEMS */
+.navbar-item:nth-child(1) {
+    order: 1;
+}
+
+.navbar-item:nth-child(2) {
+    order: 2;
+}
+
+.navbar-item:nth-child(3) {
+    order: 3;
+}
+
+.navbar-item:nth-child(4) {
+    order: 4;
+}
+
+.navbar-item:nth-child(5) {
+    order: 5;
+}
+
+.navbar-item:nth-child(6) {
+    order: 6;
+}
+
+.navbar-item:nth-child(7) {
+    order: 7;
+}
+
+.navbar-item:nth-child(8) {
+    order: 8;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a.active {
+    color:white; 
+
+}
+
+a:hover:not(.active) {
+    color:white;
+    letter-spacing: 2px;
+    transition: all 280ms ease-in-out;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+/*------MAIN------*/
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+
+h1 {
+    font-family: 'Solway', serif;
+    text-align: center;
+    font-size: 50px;
+    margin: 15px;
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+}
+
+.flex-content h2 {
+    margin: 5px;
+    text-align: center;
+    font-family: 'Solway', serif;
+}
+
+.flex-content img {
+    width: 100%;
+    height: auto;
+}
+
+.flex-content div {
+    margin: 10px 0px;
+}
+
+
+.buttonStyle {
+    left: 100px;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Solway', serif;
+    color: blue;
+    background-color:white;
+    border: 2px solid blue;
+    border-radius: 300px;
+}
+
+.p-footerAddress {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: bold;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding-top: 15px;
+}
+.footer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color:lightblue;
+    color: white;
+    text-align: center;
+}
+
+.socialmedia {
+    padding-top: 20px;
+}
+
+/*------MEDIUM SIZE SCREENS------*/
+@media(min-width: 540px) {
+
+    /* NAVBAR ITEMS */
+    .navbar-item:nth-child(1) {
+        order: 4;
+    }
+
+    .navbar-item:nth-child(2) {
+        display: none;
+    }
+
+    .navbar-item:nth-child(3) {
+        order: 1;
+    }
+
+    .navbar-item:nth-child(4) {
+        order: 2;
+    }
+
+    .navbar-item:nth-child(5) {
+        order: 3;
+    }
+
+    .navbar-item:nth-child(6) {
+        order: 6;
+    }
+
+    .navbar-item:nth-child(7) {
+        order: 7;
+    }
+
+    .navbar-item:nth-child(8) {
+        order: 8;
+    }
+    .navbar {
+        flex-direction: row;
+        padding-bottom: 0px;
+    }
+
+    .navbar img {
+        height: 70px;
+        width: auto;
+    }
+    header label img {
+        display: none;
+    }
+
+    #logo {
+        width: 100px;
+        height: 80px;
+        margin: 0px 1vw;
+    }
+    
+    h1{
+        font-size: 70px;
+    }
+
+    
+
+/* MAIN */
+
+.flex-content{
+    flex-direction: row;
+    margin: 0px 10px;
+}
+
+.flex-content div{
+    margin: 20px;
+}
+
+.earlgrey{
+    order: 1;
+    flex-grow: 1;
+    width: 25%;
+}
+
+.pumpkin{
+    order: 2;
+    flex-grow: 1;
+    width: 25%;
+}
+
+.pecan {
+    order: 3;
+    flex-grow: 1;
+    width: 25%;
+}
+
+.mousse {
+    order: 4;
+    flex-grow: 1;
+    width: 25%;
+}
+
+.honey {
+    width: 25%;
+    order: 5;
+    flex-grow: 2;
+}
+
+.page{
+    width: 40%;
+    flex-grow: 1;
+}
+
+.page p{
+    margin: 10px;
+    font-family: 'Solway', serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+}
+
+.page-list{
+    width: 20%;
+    flex-grow: 1;
+}
+
+
