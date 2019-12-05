@@ -180,7 +180,24 @@ h1 {
     color: white;
     text-align: center;
 }
+#instagram {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: right;
+    background-image: url(instagramiconwhite.png);
+    display: inline-block;
+}
 
+#facebook {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: right;
+    background-image: url(facebookiconwhite.png);
+    display: inline-block;
+    
+}
 .socialmedia {
     padding-top: 20px;
 }
@@ -188,38 +205,7 @@ h1 {
 /*---------------MEDIUM SIZE SCREENS------------*/
 @media(min-width: 540px) {
 
-    /* NAVBAR ITEMS */
-    .navbar-item:nth-child(1) {
-        order: 4;
-    }
 
-    .navbar-item:nth-child(2) {
-        display: none;
-    }
-
-    .navbar-item:nth-child(3) {
-        order: 1;
-    }
-
-    .navbar-item:nth-child(4) {
-        order: 2;
-    }
-
-    .navbar-item:nth-child(5) {
-        order: 3;
-    }
-
-    .navbar-item:nth-child(6) {
-        order: 6;
-    }
-
-    .navbar-item:nth-child(7) {
-        order: 7;
-    }
-
-    .navbar-item:nth-child(8) {
-        order: 8;
-    }
     .navbar {
         flex-direction: row;
         padding-bottom: 0px;
