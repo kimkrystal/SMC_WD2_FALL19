@@ -11,29 +11,26 @@
 </head>
 
 <body>
-    <header>
-        <div id="mobileHeader">
-            <label for="toggler">
-                <img src="logo/bookclosed.png" alt="Book Icon">
-            </label>
-            <div class="toggle">
-                <div class="hamburger"></div>
-            </div>
-        </div>
-
-        <div class="navbar">
-            <div class="navbar-item logo"><a href="index.html"><img src="logo/r2klogo.gif"
-                        alt="Reading to Kids Logo"></a>
-            </div>
-            <div class="navbar-item "><a href="index.html">Home</a></div>
-            <div class="navbar-item"><a href="about.html">About</a></div>
-            <div class="navbar-item"><a href="blog.html">Blog</a></div>
-            <div class="navbar-item"><a href="volunteer.html">Volunteer</a></div>
-            <div class="navbar-item"><a href="gallery.html">Gallery</a></div>
-            <div class="navbar-item"><a href="contact.html">Contact</a></div>
-            <div class="navbar-item"><a href="donation.html">Donate</a></div>
-        </div>
-    </header>
+                <header>
+                    <div id="mobileHeader">
+                        <label for="toggler">
+                            <img src="logo/r2k-new-logo.png" alt="Reading to Kids Logo">
+                        </label>
+                        <div class="toggle">
+                            <div class="hamburger"></div>
+                        </div>
+                    </div>
+            
+                    <div class="navbar">
+                        <div class="navbar-item logo"><a href="index.html"><img src="logo/r2k-new-logo.png"
+                                    alt="Reading to Kids Logo"></a>
+                        </div>
+                        <div class="navbar-item "><a  href="index.html">Home</a></div>
+                        <div class="navbar-item"><a href="about.html">About</a></div>
+                        <div class="navbar-item"><a href="blog.html">Blog</a></div>
+                        <div class="navbar-item"><a class="active"href="donation.html">Donate</a></div>
+                    </div>
+                </header>
 
     <main>
         <div id="main">
@@ -48,20 +45,21 @@
         <!-- example for donate money -->
 
         <div class="donate-container">
-                <div class="donate-items">$500</div>
-                <div class="donate-items">$250</div>
-                <div class="donate-items">$150</div>
-                <div class="donate-items">$100</div>
-                <div class="donate-items">$75</div>
-                <div class="donate-items">$50</div>
-                <div class="donate-items">$25</div>
-                <div class="donate-items">8</div>
+            <div class="donate-items">$500</div>
+            <div class="donate-items">$250</div>
+            <div class="donate-items">$150</div>
+            <div class="donate-items">$100</div>
+            <div class="donate-items">$75</div>
+            <div class="donate-items">$50</div>
+            <div class="donate-items">$25</div>
+            <div class="donate-items"><input id="amount" type="text" name="amountbox" autocomplete="off"></div>
         </div>
         <div class="center">
             <button id="donate" class="default">Donate</button>
         </div>
         <div class="blur-window">
             <div class="popup-window">
+                <h2 class="donation-window">Thanks for your Donation!</h2>
                 <div class="close"></div>
             </div>
         </div>
