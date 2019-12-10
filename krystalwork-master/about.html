@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Week 13 HW</title>
-    <link href="about.css" rel="stylesheet">
+    <title>Week 14 Final</title>
     <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -42,16 +43,30 @@
                 <p>Reading to Kids is a grassroots organization dedicated to inspiring underserved children with a love
                     of reading, thereby enriching their lives and opportunities for success in the future. To this end,
                     Reading to Kids gathers on average 582 children and 304 volunteers at reading clubs on the second
-                    Saturday of every month at eight Los Angeles elementary schools. At the monthly reading clubs, pairs
+                    Saturday of every month at eight Los Angeles elementary schools. </p>
+                    <p>At the monthly reading clubs, pairs
                     of volunteers read aloud to small groups of children, while their parents receive training on how to
                     encourage their children to read at home. Kids, parents, teachers, and school libraries receive book
                     donations at the end of the reading clubs. These are important donations, as 60 percent of
                     low-income homes do not have age-appropriate reading materials for children.</p>
+                    <p>Since its inception in 1999, Reading to Kids has given 175,805 prize books to children who attend the reading clubs, donated 32,446 hardcover books to school libraries, and our volunteers have spent more than 217,104 hours reading to kids. </p>
             </div>
         </div>
 
-        <iframe width="60%" height="315" src="https://www.youtube.com/embed/2H7faKIcdHs" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="w3-content w3-display-container">
+                <img class="mySlides" src="images/about/volunteer.jpg" style="width:100%" >
+                <img class="mySlides" src="images/about/volunteer2 copy.jpg" style="width:100%">
+                <img class="mySlides" src="images/about/volunteer3 copy.jpg" style="width:100%">
+              
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+              </div>
+              
+              
+              
+
+        <!-- <iframe width="80%" height="315" src="https://www.youtube.com/embed/2H7faKIcdHs" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
         <!------- FOOTER ------>
         <div class="footer">
@@ -70,6 +85,25 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="javascript.js"></script>
+    <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
 </body>
 
 </html>

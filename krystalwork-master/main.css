@@ -7,7 +7,7 @@
 
 body {
     margin: 0px;
-  }
+}
 
 header {
     background-color: transparent;
@@ -16,6 +16,7 @@ header {
 header input#toggler {
     display: none;
 }
+
 header label img {
     width: 50px;
     height: auto;
@@ -25,6 +26,7 @@ header label img {
 input#toggler:checked+nav {
     display: block;
 }
+
 #logo {
     position: relative;
     bottom: -50px;
@@ -43,7 +45,7 @@ img {
 
 
 .navbar {
-    background-color:rgb(254, 252,251);
+    background-color: rgb(254, 252, 251);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -52,12 +54,12 @@ img {
 }
 
 .navbar-item {
-    margin: 10px; 
-    font-family: "Lato", sans-serif; 
+    margin: 10px;
+    font-family: "Lato", sans-serif;
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
-    color:rgb(11, 40, 130);
+    color: rgb(11, 40, 130);
 }
 
 .navbar img {
@@ -85,9 +87,9 @@ img {
 
 .navbar-item:nth-child(5) {
     order: 5;
-    border: 2px solid rgb(255,163,10);
-    background-color:rgb(255,163,10);
-    color: rgb(254, 252,251);
+    border: 2px solid rgb(255, 163, 10);
+    background-color: rgb(255, 163, 10);
+    color: rgb(254, 252, 251);
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -95,18 +97,18 @@ img {
 }
 
 
-a{
+a {
     text-decoration: none;
-    color:rgb(11, 40, 130);
+    color: rgb(11, 40, 130);
 }
 
 a.active {
-    color:rgb(105,186, 219);
+    color: rgb(105, 186, 219);
 
 }
 
 a:hover:not(.active) {
-    color:rgb(105,186, 219);
+    color: rgb(105, 186, 219);
 }
 
 
@@ -123,10 +125,10 @@ a:hover:not(.active) {
 }
 
 
-.page-title{
-    font-family: 'Baloo', cursive;   
+.page-title {
+    font-family: 'Baloo', cursive;
     text-align: center;
-    color: rgb(254, 252,251);
+    color: rgb(254, 252, 251);
     font-size: 50px;
     margin: 15px;
     width: 100%;
@@ -142,8 +144,8 @@ h2 {
 
 p {
     text-align: center;
-    font-family: "Lato", sans-serif;  
-    font-size: 15px; 
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
 }
 
 .title {
@@ -171,18 +173,20 @@ p {
     height: 50px;
     margin: auto;
     font-size: 18px;
-    font-family: "Lato", sans-serif; 
-    background-color: rgb(255,163,10);
-    border: 2px solid rgb(255,163,10);
+    font-family: "Lato", sans-serif;
+    background-color: rgb(255, 163, 10);
+    border: 2px solid rgb(255, 163, 10);
     border-radius: 300px;
 }
+
 .floater-section {
     min-height: 300px;
     width: 100%;
 }
+
 .container::after {
     clear: both;
-    content:"";
+    content: "";
     display: block;
 }
 
@@ -190,13 +194,13 @@ img {
     max-width: 100%;
 }
 
-.content{
+.content {
     padding: 15px;
 }
 
 /*---------------HOME PAGE----------------*/
 
-.background-index{
+.background-index {
     background-image: url("kidsgroup2.jpg");
     background-position: center;
     background-size: cover;
@@ -206,6 +210,7 @@ img {
 .pos-relative {
     position: relative;
 }
+
 /* with unknown height */
 .v-centered-block {
     height: 100px;
@@ -248,38 +253,52 @@ img {
     text-align: center;
 }
 
-.box1{
-    background-color:rgb(254, 252,251);
-    color:rgb(11, 40, 130);
+.box1 {
+    background-color: rgb(254, 252, 251);
+    color: rgb(11, 40, 130);
 }
-.box2{
-    background-color:rgb(3, 64, 138);
-    color:rgb(254, 252,251);
+
+.box2 {
+    background-color: rgb(3, 64, 138);
+    color: rgb(254, 252, 251);
 }
-.box3{
-    background-color:rgb(11, 40, 130);
-    color:rgb(254, 252,251);
+
+.box3 {
+    background-color: rgb(11, 40, 130);
+    color: rgb(254, 252, 251);
 }
-.box4{
-    background-color: rgb(105,186, 219);
-    color:rgb(254, 252,251);
-    
+
+.box4 {
+    background-color: rgb(105, 186, 219);
+    color: rgb(254, 252, 251);
+
 }
 
 .link {
     text-decoration: none;
-    color: rgb(255,163,10);
+    color: rgb(255, 163, 10);
 }
-h3{
+
+h3 {
     font-family: 'Kalam', cursive;
     text-align: center;
     color: white;
     font-size: 16px;
 }
-.background-about{
+
+/*---------------ABOUT US----------------*/
+.background-about {
     background-image: url("books.jpg");
     background-position: center;
     background-size: cover;
+}
+
+.aboutUs {
+    padding: 10px 10px 0px 10px;
+}
+
+.mySlides {
+    display: none;
 }
 
 /*---------------FOOTER----------------*/
@@ -292,14 +311,16 @@ h3{
     margin: 0px;
     padding-top: 15px;
 }
+
 .footer {
     position: relative;
     height: 100px;
     width: 100%;
-    background-color:rgb(11, 40, 130);
+    background-color: rgb(11, 40, 130);
     color: white;
     text-align: center;
 }
+
 #instagram {
     width: 30px;
     height: 30px;
@@ -316,14 +337,16 @@ h3{
     background-position: right;
     background-image: url(facebookiconwhite.png);
     display: inline-block;
-    
+
 }
+
 .socialmedia {
     padding-top: 20px;
 }
-/*---------------MEDIUM SIZE SCREENS------------*/
+
+/*---------------------MEDIUM SIZE SCREENS------------------*/
 @media(min-width: 540px) {
-    
+
     .grid-layout {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
@@ -333,9 +356,9 @@ h3{
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        top:-275px;
+        top: -275px;
     }
-    
+
     .grid-item {
         width: 100%;
         height: 275px;
@@ -350,6 +373,7 @@ h3{
         height: 100px;
         width: auto;
     }
+
     header label img {
         display: none;
     }
@@ -360,12 +384,12 @@ h3{
         margin: 0px 1vw;
     }
 
-    .container{
+    .container {
         width: 520px;
-        margin:auto;
+        margin: auto;
     }
 
-    .floater-section{
+    .floater-section {
         min-height: 800px;
     }
 
@@ -390,70 +414,76 @@ h3{
     }
 
     .width-md-100 {
-        width:100%;
-    } 
+        width: 100%;
+    }
 
-    
+    /*---------------ABOUT US----------------*/
 
-/* MAIN */
+    .aboutUs {
+        padding: 10px 350px 0px 350px;
+    }
 
-.flex-content{
-    flex-direction: row;
-    margin: 0px 10px;
+    .background-about {
+        min-height: 400px;
+    }
+
+    /* MAIN */
+
+    .flex-content {
+        flex-direction: row;
+        margin: 0px 10px;
+    }
+
+    .flex-content div {
+        margin: 20px;
+    }
+
+    .earlgrey {
+        order: 1;
+        flex-grow: 1;
+        width: 25%;
+    }
+
+    .pumpkin {
+        order: 2;
+        flex-grow: 1;
+        width: 25%;
+    }
+
+    .pecan {
+        order: 3;
+        flex-grow: 1;
+        width: 25%;
+    }
+
+    .mousse {
+        order: 4;
+        flex-grow: 1;
+        width: 25%;
+    }
+
+    .honey {
+        width: 25%;
+        order: 5;
+        flex-grow: 2;
+    }
+
+    .page {
+        width: 40%;
+        flex-grow: 1;
+    }
+
+    .page p {
+        margin: 10px;
+        font-family: 'Solway', serif;
+        font-size: 24px;
+        text-decoration: none;
+        color: black;
+    }
+
 }
 
-.flex-content div{
-    margin: 20px;
-}
-
-.earlgrey{
-    order: 1;
-    flex-grow: 1;
-    width: 25%;
-}
-
-.pumpkin{
-    order: 2;
-    flex-grow: 1;
-    width: 25%;
-}
-
-.pecan {
-    order: 3;
-    flex-grow: 1;
-    width: 25%;
-}
-
-.mousse {
-    order: 4;
-    flex-grow: 1;
-    width: 25%;
-}
-
-.honey {
-    width: 25%;
-    order: 5;
-    flex-grow: 2;
-}
-
-.page{
-    width: 40%;
-    flex-grow: 1;
-}
-
-.page p{
-    margin: 10px;
-    font-family: 'Solway', serif;
-    font-size: 24px;
-    text-decoration: none;
-    color: black;
-}
-
-}
-
-.page-list{
+.page-list {
     width: 20%;
     flex-grow: 1;
 }
-
-
