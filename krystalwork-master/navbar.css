@@ -45,7 +45,7 @@ main{
 .hamburger {
     width: 20px;
     height: 4px;
-    background: lightblue;
+    background: rgb(105,186, 219);
     border-radius: 5px;
     position: absolute;
     top: 50%;
@@ -61,7 +61,7 @@ main{
     height: 4px;
     right: 0;
     border-radius: 5px;
-    background: lightblue;
+    background: rgb(105,186, 219);
     transition: 0.5s;
 }
 .hamburger:before{
@@ -98,10 +98,10 @@ main{
     width: 30%;
     height: 50px;
     margin: 8px;
-    border: 2px solid lightblue;
+    border: 2px solid rgb(105,186, 219);
     border-radius: 15px;
     text-align: center;
-    color: lightblue;
+    color:rgb(105,186, 219);
     line-height: 50px;
     align-content: center;
 }
@@ -117,9 +117,9 @@ main{
     margin: 5px 0px 20px 0px;
     text-align: center;
     border-radius: 15px;
-    color: white;
-    border: 2px solid #f74835;
-    background-color: #f74835;
+    color: rgb(254, 252,251);
+    border: 2px solid rgb(255,163,10);
+    background-color: rgb(255,163,10);
 }
 
 /*popup-window*/
@@ -152,7 +152,7 @@ main{
     width: 30px;
     height: 4px;
     border-radius: 5px;
-    background-color: lightblue;
+    background-color: rgb(105,186, 219);
     transform: rotate(45deg);
 }
 
@@ -162,7 +162,7 @@ main{
     width: 30px;
     height: 4px;
     border-radius: 5px;
-    background: lightblue;
+    background: rgb(105,186, 219);
     transform: rotate(90deg);
 }
 
@@ -184,7 +184,7 @@ main{
 
     .navbar-item.logo{
         position: absolute;
-        top: 5px;
+        top: -5px;
         left: 10px;
     }
 
