@@ -1,8 +1,8 @@
-main{
+main {
     transition: 0.5s;
 }
 
-.navbar{
+.navbar {
     justify-content: flex-start;
     position: fixed;
     top: 0;
@@ -12,20 +12,20 @@ main{
     transition: 0.5s;
 }
 
-.navbar.open{
+.navbar.open {
     width: 250px;
     transition: 0.5s;
 }
 
-.slide-right{
-    transform : translate3d(-250px,0,0);
+.slide-right {
+    transform: translate3d(-250px, 0, 0);
 }
 
-#mobileHeader{
+#mobileHeader {
     width: 100%;
     height: 65px;
     background-color: white;
-    box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
     margin-bottom: 5px;
 }
@@ -45,7 +45,7 @@ main{
 .hamburger {
     width: 20px;
     height: 4px;
-    background: rgb(105,186, 219);
+    background: rgb(105, 186, 219);
     border-radius: 5px;
     position: absolute;
     top: 50%;
@@ -54,89 +54,107 @@ main{
     transition: 0.5s;
 }
 
-.hamburger:before, .hamburger:after{
-    content:"";
+.hamburger:before,
+.hamburger:after {
+    content: "";
     position: absolute;
     width: 25px;
     height: 4px;
     right: 0;
     border-radius: 5px;
-    background: rgb(105,186, 219);
+    background: rgb(105, 186, 219);
     transition: 0.5s;
 }
-.hamburger:before{
+
+.hamburger:before {
     top: 8px;
 }
 
-.hamburger:after{
+.hamburger:after {
     top: -8px;
 }
 
-.toggle.active .hamburger{
+.toggle.active .hamburger {
     background: rgba(0, 0, 0, 0);
 }
 
-.toggle.active .hamburger:before{
-    top:0;
+.toggle.active .hamburger:before {
+    top: 0;
     transform: rotate(135deg);
 }
 
-.toggle.active .hamburger:after{
+.toggle.active .hamburger:after {
     top: 0;
     transform: rotate(45deg);
 }
 
 /*donate style*/
-.donate-container{
+.donate-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     margin: 10px auto;
+    cursor: pointer;
 }
-.donate-items{
+
+.donate-items {
+    text-align: center;
+    font-family: "Lato", sans-serif;
     width: 30%;
     height: 50px;
     margin: 8px;
-    border: 2px solid rgb(105,186, 219);
+    border: 2px solid rgb(105, 186, 219);
     border-radius: 15px;
-    text-align: center;
-    color:rgb(105,186, 219);
+    color: rgb(105, 186, 219);
     line-height: 50px;
     align-content: center;
 }
 
+.donate-items:hover {
+    background-color: rgb(105, 186, 219);
+    color: white
+}
+
+.donate-items.active {
+    background-color: rgb(105, 186, 219);
+    color: white
+}
+
 /* all buttton style*/
-.center{
+.center {
     text-align: center;
 }
 
-.default{
+.buttonDonate {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
     width: 150px;
     height: 50px;
     margin: 5px 0px 20px 0px;
     text-align: center;
     border-radius: 15px;
-    color: rgb(254, 252,251);
-    border: 2px solid rgb(255,163,10);
-    background-color: rgb(255,163,10);
+    color: rgb(254, 252, 251);
+    border: 2px solid rgb(255, 163, 10);
+    background-color: rgb(255, 163, 10);
 }
 
+
 /*popup-window*/
-.popup-window{
+.popup-window {
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index:999;
+    z-index: 999;
     width: 250px;
     height: 250px;
     border-radius: 10px;
-    transform: translate(-52.5%, -50%);
+    transform: translate(-50%, -50%);
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.blur-window{
+.blur-window {
     display: none;
     position: fixed;
     top: 0;
@@ -146,32 +164,45 @@ main{
     background-color: rgba(75, 150, 185, 0.3);
 }
 
-.close{
+.close {
     float: right;
     margin: 25px 12px;
     width: 30px;
-    height: 4px;
+    height: 2px;
     border-radius: 5px;
-    background-color: rgb(105,186, 219);
+    background-color: rgb(105, 186, 219);
     transform: rotate(45deg);
 }
 
-.close:after{
-    content:"";
+.close:after {
+    content: "";
     position: absolute;
     width: 30px;
-    height: 4px;
+    height: 2px;
     border-radius: 5px;
-    background: rgb(105,186, 219);
+    background: rgb(105, 186, 219);
     transform: rotate(90deg);
 }
 
-.close:hover,.close:hover:after{
+.close:hover,
+.close:hover:after {
     background-color: darkblue;
 }
 
+.donatethanks{
+    margin-top: 50px;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(11, 40, 130);
+}
+
+.donatethanks h4{
+    padding: 50px 20px;
+    color: white;
+}
+
 @media(min-width: 540px) {
-    
+
     .navbar {
         position: relative;
         justify-content: flex-end;
@@ -182,22 +213,22 @@ main{
         transition: 0s;
     }
 
-    .navbar-item.logo{
+    .navbar-item.logo {
         position: absolute;
         top: -5px;
         left: 10px;
     }
 
-    #mobileHeader{
+    #mobileHeader {
         display: none;
     }
 
-    .donate-items{
+    .donate-items {
         width: 100px;
         margin: 10px;
     }
 
-    div p{
+    div p {
         padding: 10px;
     }
 }

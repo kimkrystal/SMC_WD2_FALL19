@@ -12,4 +12,8 @@ $(document).ready(function(){
             $('.blur-window').fadeOut('300');
         });
     });
+
+    $('.donate-items').click(function(){
+        $(this).toggleClass('active');
+    });
 });
