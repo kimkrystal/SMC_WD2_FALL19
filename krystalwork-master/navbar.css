@@ -29,7 +29,7 @@ main {
     margin-bottom: 5px;
 }
 
-/* hamburger style*/
+/*--------------HAMBURGER STYLE------------*/
 .toggle {
     display: block;
     position: absolute;
@@ -87,7 +87,7 @@ main {
     transform: rotate(45deg);
 }
 
-/*donate style*/
+/*--------------DONATE STYLE------------*/
 .donate-container {
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +139,7 @@ main {
 }
 
 
-/*popup-window*/
+/*------------POP UP WINDOW----------*/
 .popup-window {
     position: fixed;
     top: 50%;
