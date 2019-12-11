@@ -44,11 +44,12 @@
 
             <div class="grid-layout-blog">
                 <div class="grid-blog-content">
-                    <img src="images/blog/reading-aloud.jpg" alt="Reading Aloud infographic">
+                    <img src="images/home/reading3.jpg" alt="Young man reading to little boy">
 
-                    <h3>Why Read Aloud?</h3>
-                    <h4>Posted on April 24, 2019</h4>
-                    <p>There is an easy way to improve your child's chances at school. It will entertain and delight
+                    <h4>Why Read Aloud?</h4>
+                    <p class="caption">Posted on April 24, 2019 <br>
+                        <br>
+                        There is an easy way to improve your child's chances at school. It will entertain and delight
                         him. It will strengthen the bonds between him and you. And it is virtually free. Sound too good
                         to be true?
                         Actually, it isn't. The magical method: taking time to read aloud to your child.
@@ -57,18 +58,18 @@
 
                 <div class="grid-blog-content">
                     <img src="images/blog/makeachange.jpg" alt="Hands with coins and sign saying Make a Change">
-                    <h3>2019 Annual Fund Drive</h3>
-                    <h4>Posted on June 8, 2019</h4>
-                    <p>Our Annual Fund Drive lasts until December 31st, and our goal this year is to raise $60,000
+                    <h4>2019 Annual Fund Drive</h4>
+                    <p class="caption">Posted on June 8, 2019<br>
+                    <br>Our Annual Fund Drive lasts until December 31st, and our goal this year is to raise $60,000
                         from 600 donors. Please help us meet that goal by spreading the word to your friends and
                         co-workers! </p>
                 </div>
                 <div class="grid-blog-content">
-                    <img src="images/blog/marathon_R4R2K.png" alt="Running for Reading to Kids logo.">
+                        <img src="images/home/marathon.jpg" alt="Marathon runners for Reading to Kids">
 
-                    <h3>Team Reading to Kids - 2020 Los Angeles Marathon</h3>
-                    <h4>Posted on December 4, 2019</h4>
-                    <p>Do you know any runners? Are you a runner? Please forward this email to them and ask them to
+                    <h4>Team Reading to Kids</h4>
+                    <p class="caption">Posted on December 4, 2019<br>
+                    <br>Do you know any runners? Are you a runner? Please forward this email to them and ask them to
                         join
                         Team Reading to Kids in the 2020 Los Angeles Marathon on Sunday, March 8th!</p>
                 </div>
@@ -89,6 +90,12 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="javascript.js"></script>
+    <script>
+                        $(".grid-blog-content")
+                            .click(function () {
+                                $(this).children(".caption").slideToggle("slow");
+                            });
+                        </script>
 </body>
 
 </html>
